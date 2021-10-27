@@ -16,6 +16,7 @@ pkgs.mkShell {
     pythonWithPackages
     pkgs.buildPackages.git
     pkgs.buildPackages.gitRepo
+    pkgs.buildPackages.cacert
     pkgs.buildPackages.cmake
     pkgs.buildPackages.ninja
     pkgs.buildPackages.libxml2
