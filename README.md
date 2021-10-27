@@ -20,5 +20,5 @@ cd ia32_build
 ninja
 
 # Run it in qemu
-./simulate
+./simulate       # to exit qemu, press: C-a x
 ```
