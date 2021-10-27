@@ -2,13 +2,13 @@
   crossSystem = { config = "i686-unknown-linux-gnu"; };
 } }:
 let
-  pythonWithPackages = pkgs.buildPackages.python3.withPackages (pkg: with pkg; [
-    six
-    future
-    setuptools
-    jinja2
-    ply
-    protobuf
+  pythonWithPackages = pkgs.buildPackages.python3.withPackages (pkg: [
+    pkg.six
+    pkg.future
+    pkg.setuptools
+    pkg.jinja2
+    pkg.ply
+    pkg.protobuf
   ]);
 in
 pkgs.mkShell {
